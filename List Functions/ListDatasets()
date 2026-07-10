@@ -1,0 +1,13 @@
+import arcpy
+
+# Set the File Geodatabase workspace
+#you must have gdb in that folder
+arcpy.env.workspace = r"C:\Users\Dell\Desktop\GIS.gdb"
+
+# Loop through all feature datasets
+for dataset in arcpy.ListDatasets():
+
+    # Print dataset name
+    print(dataset)
+
+print("Completed")
