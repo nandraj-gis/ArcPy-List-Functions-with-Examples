@@ -1,0 +1,13 @@
+import arcpy
+
+# Set the workspace containing shapefiles
+#Folder must be containing Shapefiles or Feature Classes
+arcpy.env.workspace = r"C:\Users\Dell\Desktop\demo"
+
+# Loop through all feature classes in the workspace
+for fc in arcpy.ListFeatureClasses():
+
+    # Print the feature class name
+    print(fc)
+
+print("Completed")
