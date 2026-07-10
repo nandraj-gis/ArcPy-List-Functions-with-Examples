@@ -1,0 +1,12 @@
+import arcpy
+
+# Set the workspace
+arcpy.env.workspace = r"C:\Users\Dell\Desktop\Data"
+
+# Loop through all files
+for file in arcpy.ListFiles():
+
+    # Print file name
+    print(file)
+
+print("Completed")
