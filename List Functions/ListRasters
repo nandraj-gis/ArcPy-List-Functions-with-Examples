@@ -1,0 +1,12 @@
+import arcpy
+
+# Set the workspace
+arcpy.env.workspace = r"E:\ORI"
+
+# Loop through all raster datasets
+for raster in arcpy.ListRasters():
+
+    # Print raster name
+    print(raster)
+
+print("Completed")
