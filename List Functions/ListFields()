@@ -1,0 +1,12 @@
+import arcpy
+
+# Input feature class
+fc = r"C:\Users\Dell\Desktop\demo\village.shp"
+
+# Loop through all fields in the feature class
+for field in arcpy.ListFields(fc):
+
+    # Print the field name
+    print(field.name)
+
+print("Completed")
