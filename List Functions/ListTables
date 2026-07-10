@@ -1,0 +1,13 @@
+import arcpy
+
+# Set the workspace
+#Required Data -Tables (.dbf or Geodatabase Tables)
+arcpy.env.workspace = r"C:\Users\Dell\Desktop\demo"
+
+# Loop through all tables
+for table in arcpy.ListTables():
+
+    # Print table name
+    print(table)
+
+print("Completed")
